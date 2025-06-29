@@ -92,7 +92,7 @@ def procesar_archivo_completo(config):
     # 3. Cargar el archivo de entrada
     try:
         print(f"\n--- Cargando datos de '{config['archivo_entrada']}' ---")
-        df = pd.read_csv(config['archivo_entrada']) # Cambiado a read_csv para tu caso de uso
+        df = pd.read_excel(config['archivo_entrada']) # Cambiado a read_csv para tu caso de uso
         print(f"Archivo cargado. {len(df)} filas encontradas.")
     except FileNotFoundError:
         print(f"¡ERROR! No se encontró el archivo '{config['archivo_entrada']}'. Verifica el nombre y la ubicación.")
@@ -157,11 +157,11 @@ if __name__ == "__main__":
         # 2. Rutas a tus modelos locales
         "ruta_tabularis": "local_tabuilaris_sentiment/modelo_descargado", # --- CORREGIDO ---
         "ruta_nlp_bert": "local_nlp_bert/modelo_bert_descargado",
-        "ruta_robertuito": "robertuia_local/local_robertuito/modelo_robertuito_descargado", # --- NUEVO ---
+        "ruta_robertuito": "local_robertuito/modelo_robertuito_descargado", # --- NUEVO ---
 
         # 3. Parámetros de ejecución
         "tamano_lote": 100, 
-        "limite_filas": 100  # Cambia a un número para limitar las filas procesadas, o None para procesar todo 
+        "limite_filas": None  # Cambia a un número para limitar las filas procesadas, o None para procesar todo 
     }
     
     procesar_archivo_completo(configuracion)
