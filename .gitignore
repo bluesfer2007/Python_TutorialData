@@ -136,6 +136,8 @@ local_nlp_bert/modelo_bert_descargado/
 local_tabularis_sentiment/modelo_descargado/
 local_robertuito/modelo_robertuito_descargado/
 kjewkjndffkjndf.pbix  # Ignorar archivos de Power BI
-medir_resultado_accur_v3.csv  # Ignorar resultados de accuracy
+medir_resultado_accur_v3.csv  
+# Ignorar resultados de accuracy
 medir_resultado_accur.csv
-train.csv   # Ignorar archivo de entrenamiento
+train.csv   
+# Ignorar archivo de entrenamiento
